@@ -3,9 +3,9 @@ version: 2.1
 orbs:
   codecov: codecov/codecov@1.1.1
 
-xcode_version: &xcode_version 12.2.0
-iphone_name: &iphone_name iPhone 8
-preload_simulator: &preload_simulator xcrun instruments -w "iPhone 8 (14.2) [" || true
+xcode_version: &xcode_version 12.4
+iphone_name: &iphone_name iPhone 12 mini
+preload_simulator: &preload_simulator xcrun instruments -w "iPhone 12 mini (14.4) [" || true
 
 # Templates
 

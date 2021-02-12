@@ -23,6 +23,7 @@ export XCODE_XCCONFIG_FILE="$xcconfig"
 # If not running on CircleCI, pass args through
 if [ -z "${CIRCLECI:-}" ]; then
   carthage "$@"
+  echo "circle Ci step..." $@
 # Else if running on CircleCI and no cache found, ensure latest carthage and build resolved dependencies
 elif ! cmp -s Cartfile.resolved Carthage/Cartfile.resolved; then
   brew upgrade carthage

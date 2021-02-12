@@ -937,7 +937,8 @@ Unterstützer"
 patrocinadores"
    - **fr**: "%{backers_count}
 contributeurs"
-   - **ja**: "%{backers_count} バッカー"
+   - **ja**: "%{backers_count}
+バッカー"
   */
   public static func Backers_count_separator_backers(backers_count: Int) -> String {
     return localizedString(
@@ -1656,7 +1657,7 @@ contributeurs"
    - **de**: "Bestätigen"
    - **es**: "Confirmar"
    - **fr**: "Confirmer"
-   - **ja**: "確認"
+   - **ja**: "確定する"
   */
   public static func Confirm() -> String {
     return localizedString(
@@ -1781,7 +1782,7 @@ Haz clic para volver a intentarlo."
    - **de**: "Weiter"
    - **es**: "Continuar"
    - **fr**: "Continuer"
-   - **ja**: "続行する"
+   - **ja**: "次へ"
   */
   public static func Continue() -> String {
     return localizedString(
@@ -1815,7 +1816,7 @@ Haz clic para volver a intentarlo."
    - **de**: "Weiter zu Beitrag aktualisieren"
    - **es**: "Continuar a Actualizar contribución"
    - **fr**: "Continuer la modification de mon engagement"
-   - **ja**: "プレッジをアップデート"
+   - **ja**: "プレッジの更新へ"
   */
   public static func Continue_to_update_pledge() -> String {
     return localizedString(
@@ -2356,10 +2357,10 @@ Haz clic para volver a intentarlo."
    "zł Polish Złoty (PLN)"
 
    - **en**: "zł Polish Złoty (PLN)"
-   - **de**: "zł Polish Złoty (PLN)"
-   - **es**: "zł Polish Złoty (PLN)"
+   - **de**: "zł Polnishcer Złoty (PLN)"
+   - **es**: "Złoty polaco - zł (PLN)"
    - **fr**: "Złoty polonais – zł (PLN)"
-   - **ja**: "zł Polish Złoty (PLN)"
+   - **ja**: "zł ポーランド通貨ズウォティ(PLN)"
   */
   public static func Currency_PLN() -> String {
     return localizedString(
@@ -6099,6 +6100,23 @@ n'ont rien soutenu."
     )
   }
   /**
+   "Open inbox"
+
+   - **en**: "Open inbox"
+   - **de**: "Posteingang öffnen"
+   - **es**: "Abrir la bandeja de entrada"
+   - **fr**: "Ouvrir ma boîte de réception"
+   - **ja**: "受信箱を開く"
+  */
+  public static func Open_inbox() -> String {
+    return localizedString(
+      key: "Open_inbox",
+      defaultValue: "Open inbox",
+      count: nil,
+      substitutions: [:]
+    )
+  }
+  /**
    "Opens comments."
 
    - **en**: "Opens comments."
@@ -6595,9 +6613,9 @@ n'ont rien soutenu."
    "Pledge"
 
    - **en**: "Pledge"
-   - **de**: "Beitrag:"
+   - **de**: "Beitrag leisten"
    - **es**: "Contribución:"
-   - **fr**: "Engagement :"
+   - **fr**: "Je m'engage"
    - **ja**: "プレッジする"
   */
   public static func Pledge() -> String {
@@ -10054,7 +10072,7 @@ catch your eye?"
    - **de**: "Beitrag aktualisieren"
    - **es**: "Actualizar contribución"
    - **fr**: "Modifier mon engagement"
-   - **ja**: "プレッジをアップデートする"
+   - **ja**: "プレッジを更新する"
   */
   public static func Update_pledge() -> String {
     return localizedString(
@@ -17183,7 +17201,7 @@ Veuillez réessayer ultérieurement."
    - **de**: "Gesamt %{backers_count} Unterstützer, %{percent_funded} finanziert, noch %{time_left}"
    - **es**: "De momento tiene %{backers_count} patrocinadores, financiado al %{percent_funded}, tiempo restante: %{time_left}"
    - **fr**: "%{backers_count} contributeurs, projet financé à %{percent_funded}, plus que %{time_left}"
-   - **ja**: "バッカー%{backers_count} 人。%{percent_funded} 達成、%{time_left} で締切"
+   - **ja**: "バッカー%{backers_count} 人、%{percent_funded} 達成、%{time_left} で締切"
   */
   public static func discovery_baseball_card_stats_accessibility_non_live_stat_value(backers_count: Int, percent_funded: String, time_left: String) -> String {
     return localizedString(
@@ -20560,7 +20578,7 @@ iOSの場合、設定からFacebookのアクセスを許可してください。
 
    - **en**: "BACKED %{project_count} PROJECTS"
    - **de**: "HAT %{project_count} PROJEKTE UNTERSTÜTZT"
-   - **es**: "%{project_count} PROYECTOS PATROCINADOS"
+   - **es**: "%{project_count} PROYECTOS APOYADOS"
    - **fr**: "%{project_count} PROJETS SOUTENUS"
    - **ja**: "%{project_count} プロジェクトへバック済"
   */
@@ -21977,7 +21995,7 @@ Merci pour votre soutien !"
    - **de**: "Bestätigen"
    - **es**: "Confirmar"
    - **fr**: "Confirmer"
-   - **ja**: "確認"
+   - **ja**: "確定する"
   */
   public static func project_checkout_android_pay_confirm() -> String {
     return localizedString(
@@ -23671,7 +23689,7 @@ unterstützt"
 patrocinados"
    - **fr**: "%{projects_count}
 projets soutenus"
-   - **ja**: "%{projects_count} \n件バック済み"
+   - **ja**: "%{projects_count}\n件バック済み"
   */
   public static func projects_count_newline_backed(projects_count: Int) -> String {
     return localizedString(
@@ -24623,7 +24641,7 @@ projets enregistrés"
    - **de**: "%{created_count} erstellt"
    - **es**: "%{created_count} creados"
    - **fr**: "%{created_count} projets créés"
-   - **ja**: "%{created_count} プロジェクト"
+   - **ja**: "%{created_count}プロジェクト"
   */
   public static func social_following_friend_projects_count_created(created_count: Int) -> String {
     return localizedString(
